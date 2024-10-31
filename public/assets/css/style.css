@@ -1,0 +1,212 @@
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  display: flex;
+  flex-direction: column !important;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  /* border: 1px solid #ccc; */
+  border-top: none;
+}
+.TALL {
+  height: 400px !important;
+  display: block;
+  /* padding-top: 50px; */
+}
+.tabcontent {
+  float: left;
+  padding: 0px 20px;
+  margin: 60px 10px;
+  /* border: 1px solid #ccc; */
+  width: 71%;
+  border-left: none;
+  height: 300px;
+  /* border-radius: 0 10px 10px 0; */
+}
+
+.tabcontent h3 {
+  font-size: 20px !important;
+  font-family: "Marcellus";
+  color: #244189;
+}
+
+.tab button:hover {
+  background-color: #ffcd03;
+}
+
+.tab button.active {
+  background-color: #ffcd03;
+}
+
+.tab button {
+  display: block;
+  font-family: "Marcellus" !important;
+  background-color: inherit;
+  color: black;
+  padding: 2px 12px;
+  width: 90%;
+  border: 8one;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 17px;
+  margin: 1%;
+  border-radius: 4px;
+}
+
+.accordion__content ul li {
+  font-size: 14px;
+  font-family: "Marcellus" !important;
+  list-style: none !important;
+  text-decoration: none !important;
+}
+
+.accordion__content ul li a {
+  color: #000;
+}
+
+.tab {
+  float: left;
+  border: 1px solid #fff;
+  background-color: #fbfbfb;
+  width: 30%;
+  height: 275px;
+  border-radius: 10px 0 0 10px;
+}
+
+.longEnough {
+  max-height: 279px;
+  width: 250px;
+  overflow: auto;
+  margin: 50px 5px;
+}
+
+.longEnough3 {
+  max-height: 279px;
+  max-width: 100%;
+  overflow: auto;
+  margin: 50px 5px;
+}
+
+.longEnough1 {
+  max-height: 310px;
+  max-width: 100%;
+  overflow: auto;
+  margin: 50px 5px;
+}
+
+.longEnough2 {
+  max-height: 245px;
+  width: 100%;
+  overflow: auto;
+  margin: 50px 5px;
+}
+
+@media (max-width: 991px) {
+  .longEnough {
+    margin: 50px 65px !important;
+  }
+  .tabcontent {
+    margin: 5px 5px !important;
+    width: 360px !important;
+    text-align: start;
+  }
+}
+
+.container {
+  max-width: 80rem;
+  width: 100%;
+  padding: 4rem 2rem;
+  margin: 0 auto;
+}
+
+.main {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card {
+    color: $color-black;
+    border-radius: 2px;
+    background: $color-white;
+    box-shadow: $box-shadow;
+
+    &-image {
+      position: relative;
+      display: block;
+      width: 100%;
+      padding-top: 70%;
+      background: $color-white;
+
+      img {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .main {
+    .container {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-gap: 1rem;
+    }
+  }
+}
+
+.card {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 0 solid transparent;
+  border-radius: 0.125rem;
+}
+
+
